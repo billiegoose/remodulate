@@ -1,0 +1,24 @@
+{
+  "name": "remodulate",
+  "version": "0.0.0",
+  "description": "Convert ES2015 modules to CommonJS modules (and vice versa?)",
+  "main": "index.js",
+  "scripts": {
+    "test": "shx rm -rf output && shx cp -R examples output && jscodeshift -t index.js output"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmhilton/remodulate.git"
+  },
+  "keywords": [],
+  "author": "William Hilton <wmhilton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wmhilton/remodulate/issues"
+  },
+  "homepage": "https://github.com/wmhilton/remodulate#readme",
+  "devDependencies": {
+    "jscodeshift": "^0.5.1",
+    "shx": "^0.3.2"
+  }
+}
