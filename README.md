@@ -9,7 +9,7 @@ Clone, `npm install`, and run `npm test` to transform the files in `./examples` 
 ESM -> CJS
 - [x] named exports
 - [x] named imports
-- [ ] default exports
+- [x] default exports
 - [x] default imports
 
 CJS -> ESM

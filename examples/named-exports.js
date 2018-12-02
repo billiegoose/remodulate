@@ -10,3 +10,9 @@ export class Buzz {
         return 42;
     }
 }
+
+export const foo = 2, bar = 'c';
+
+const Foo = '2';
+export { Foo };
+export { Bar as BuzBar };
