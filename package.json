@@ -1,6 +1,6 @@
 {
   "name": "remodulate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convert ES2015 modules to CommonJS modules (and vice versa?)",
   "main": "index.js",
   "bin": "cli.js",
