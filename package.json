@@ -6,6 +6,9 @@
   "scripts": {
     "test": "shx rm -rf output && shx cp -R examples output && jscodeshift -t index.js output"
   },
+  "files": [
+    "*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wmhilton/remodulate.git"
