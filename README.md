@@ -7,12 +7,14 @@ Clone, `npm install`, and run `npm test` to transform the files in `./examples` 
 ## TODO
 
 ESM -> CJS
+- [x] namespace imports
 - [x] named exports
 - [x] named imports
 - [x] default exports
 - [x] default imports
 
 CJS -> ESM
+- [ ] namespace imports
 - [ ] named exports
 - [ ] named imports
 - [ ] default exports

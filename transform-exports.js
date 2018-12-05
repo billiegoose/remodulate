@@ -26,11 +26,9 @@ module.exports = function(file, api) {
       const { declaration, specifiers } = value;
 
       if (specifiers.length > 0) {
-        const decs = [];
-        for (let specifier of specifiers) {
-          decs.push(createCJSExport(j, specifier.local, specifier.exported));
-        }
-
+        const decs = specifiers.map(
+          specifier => createCJSExport(j, specifier.local, specifier.exported)
+        )
         return [declaration, ...decs];
       }
 
@@ -39,11 +37,9 @@ module.exports = function(file, api) {
       }
 
       if (declaration.type === "VariableDeclaration") {
-        const decs = [];
-        for (let dec of declaration.declarations) {
-          decs.push(createCJSExport(j, dec.id));
-        }
-
+        const decs = declaration.declarations.map(
+          dec => createCJSExport(j, dec.id)
+        )
         return [declaration, ...decs];
       }
 
