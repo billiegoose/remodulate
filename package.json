@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Convert ES2015 modules to CommonJS modules (and vice versa?)",
   "main": "index.js",
+  "bin": "cli.js",
   "scripts": {
     "test": "shx rm -rf output && shx cp -R examples output && jscodeshift -t index.js output"
   },
@@ -20,8 +21,10 @@
     "url": "https://github.com/wmhilton/remodulate/issues"
   },
   "homepage": "https://github.com/wmhilton/remodulate#readme",
+  "dependencies": {
+    "jscodeshift": "^0.5.1"
+  },
   "devDependencies": {
-    "jscodeshift": "^0.5.1",
     "shx": "^0.3.2"
   }
 }
